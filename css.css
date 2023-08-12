@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: hsl(30, 38%, 92%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+ main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    width: 550px;
+    height: 420px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Работа с изображением */
+article.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+picture {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+} 
+
+/* Работа с блоком описания */
+article.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Стилизация текста */
+ .first{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 13px;
+    line-height: 20px;
+    padding-right: 45px;
+    padding-left: 30px;
+}
+
+article p.first:first-child{
+    letter-spacing: 5px;
+}
+
+.second{
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    padding-right: 45px;
+    padding-left: 30px;
+}
+
+
+/* Стилизация цены */
+
+div.price{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 65px;
+    justify-content: space-between;
+    
+}
+
+div.price p:first-child{
+    color:#3e8065;
+    padding: 0;
+}
+
+ div.price p:last-child{
+    align-self: center;
+    padding: 0;
+    text-decoration: line-through;
+}
+
+
+
+
+/* Стилизация кнопки */
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: #3e8065;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    height: 40px;
+    width: 205px;
+    transition-duration: 0.4s;
+    margin-left: 30px;
+}
+
+button p{
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: #194230;
+}
+
+@media screen and (max-width: 600px){
+    
+     main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        border-radius: 10px;
+        width: 345px;
+        height: 620px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+
+    /* Работа с изображением */
+
+    article.img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+    }
+
+    picture {
+            height: 100%;
+            width: 100%;
+    }
+
+    img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+    } 
+
+    div.price{
+        padding-right: 135px; 
+    }
+
+    button {
+            width: 285px;
+    }
+
+
+}
+

@@ -1,66 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" src="images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="css.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css.css">
 
-  <title>Frontend Mentor | Results summary component</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<meta name="vieport" content="width=device-width">
+
 </head>
+
 <body>
 
-  <main>
-
-    <section>
-
-      <article class="left">
-
-        <p class="header">Your Result</p>
-
-        <article class="circle"><p class="done">76</p><p class="total" color="#fa8e47">of 100</p></article> 
-        <div class="text">
-          <p class="great">Great</p>
-          <p class="end-text">You scored higher than 65% of the people who have taken these tests.</p>
-        </div>
-        </div>  
-      </article>
-
-      <article class="right">
-
-        <div><p class='sum', >Summary</p></div>
-
-        <div class="butt butt-red"><div class="svg"><image src="images/icon-reaction.svg"></image><p class="red">Reaction</p></div><div class="score"><p>80 <a>/ 100</a></p></div></div>
-
-        <div class="butt butt-yellow"><div class="svg"><image src="images/icon-memory.svg"></image><p class="yellow">Memory</p></div><div class="score"><p>92 <a>/ 100</a></p></div></div>
-
-        <div class="butt butt-green"><div class="svg"><image src="images/icon-verbal.svg"></image><p class="green">Verbal</p></div><div class="score"><p>61 <a>/ 100</a></p></div></div>
-
-        <div class="butt butt-blue"><div class="svg"><image src="images/icon-visual.svg"></image><p class="blue">Visual</p></div><div class="score"><p>72 <a>/ 100</a></p></div></div>
-        
-        <div class="butt butt-end">Continue</div>
-      
+<main>
+        <article class="img" >
+            <picture>
+            <source media='(min-width: 600px)' srcset="images/image-product-desktop.jpg"/>
+            <source media='(max-width: 600px)' srcset="images/image-product-mobile.jpg"/>
+            <img src="images/image-product-desktop.jpg" alt="PERFUME">
+        </picture>
         </article>
-
-    </section>  
-
-    <!-- <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Ionin Vladimir</a>.
-    </div> -->
-  </main>
-  
+        <article class="text">
+        <p class="first category">PERFUME</p>
+    
+        <p class="second tittle">Gabrielle Essence Eau De Parfum</p>
+              
+        <p class="first description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price">     
+        <p class="second">$149.99</p>
+        <p class="first">$169.99</p>
+        </div> 
+        <div>
+            <button type="button" name="button"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg> <p>Add to Cart</p></button>
+        </div>    
+    </article>
+</main>
 </body>
 </html>

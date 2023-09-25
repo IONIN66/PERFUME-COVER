@@ -49,9 +49,9 @@ article.text{
 
 /* Стилизация текста */
  .first{
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    color: hsl(212, 21%, 14%);
+    color: hsl(228, 12%, 48%);
     font-size: 13px;
     line-height: 20px;
     padding-right: 45px;
@@ -106,7 +106,7 @@ button {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-    font-weight: bolder;
+    font-weight: 500;
     background-color: #3e8065;
     color: white;
     border-radius: 10px;
